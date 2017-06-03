@@ -1,16 +1,32 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Header from './Header'
+import Nav from './components/Nav'
+import Accord from './components/Accord'
+import Social from './components/Social'
+import Footer from './components/Footer'
 import './App.css';
 
+const styles = {
+  content: {
+    maxWidth: 600,
+
+  }
+}
 class App extends Component {
   render() {
     return (
       <div className="App">
+        
+        <Header />
+        <Nav brand={'Real World Water'}/>
         <div className="App-header">
-          <h2>Welcome to React</h2>
+          <h2>Real World Water</h2>
         </div>
-        <p className="App-intro">
-        </p>
+        <div style={styles.content}>
+          <Accord/>
+          <Social/>
+          <Footer/>
+        </div>
       </div>
     );
   }

@@ -3,8 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "flexbox-react": "^4.4.0",
     "react": "^15.5.4",
-    "react-dom": "^15.5.4"
+    "react-collapsible": "^1.4.0",
+    "react-dom": "^15.5.4",
+    "react-responsive-accordion": "^1.0.0",
+    "react-slick": "^0.14.11",
+    "semantic-ui-react": "^0.68.5"
   },
   "devDependencies": {
     "react-scripts": "1.0.7"
