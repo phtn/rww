@@ -7,9 +7,8 @@ import Footer from './components/Footer'
 import './App.css';
 
 const styles = {
-  content: {
-    maxWidth: 600,
-
+  container: {
+    border: '0px solid gray',
   }
 }
 class App extends Component {
@@ -22,7 +21,7 @@ class App extends Component {
         <div className="App-header">
           <h2>Real World Water</h2>
         </div>
-        <div style={styles.content}>
+        <div style={styles.content} className='content-div'>
           <Accord/>
           <Social/>
           <Footer/>

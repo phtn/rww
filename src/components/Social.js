@@ -12,6 +12,7 @@ const styles = {
     textAlign: 'center',
     height: '100%',
     margin: 20,
+    backgroundColor: '#eee',
   }
 }
 class Social extends Component {

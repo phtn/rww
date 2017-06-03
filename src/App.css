@@ -2,6 +2,7 @@
 .App {
   justify-content: center;
   align-content: center;
+  margin: 0 auto
 }
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -23,3 +24,14 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+@media screen
+  and (min-device-width: 1200px)
+  and (max-device-width: 1600px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .content-div {
+      max-width: 70%;
+      min-width: 70%;
+      margin: 0 auto;
+    }
+  }

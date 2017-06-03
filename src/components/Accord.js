@@ -8,14 +8,17 @@ const styles = {
         marginTop: 130,
         backgroundColor: 'transparent',
         borderRadius: 5,
-
+        //minWidth: window.innerWidth,
+    },
+    accord: {
+        minWidth: window.innerWidth - window.innerWidth *.34,
     }
 }
 class Accord extends Component {
     render(){
         return(
             <div style={styles.container}>  
-            <Accordion styled >
+            <Accordion styled style={styles.accord}>
                 <Accordion.Title>
                 <Icon name='dropdown' />
                 Vitality
