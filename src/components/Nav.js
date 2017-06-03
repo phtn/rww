@@ -1,6 +1,9 @@
 import React from 'react'
 import Water from '../water.svg'
 import Menu from '../menu.svg'
+import { Dropdown, Divider } from 'semantic-ui-react'
+
+const options = ['text', 'Google']
 
 const styles = {
     container: {
@@ -25,12 +28,19 @@ const styles = {
         margin: 38
     },
     menu: {
-        height: 15,
-        width: 15,
         position: 'absolute',
-        top: 30,
-        right: 65,
-        margin: 10
+        top: 25,
+        right: 35,
+        margin: 10,
+        backgroundColor: 'rgba(0,0,0,0.2)',
+        color: '#ccc'
+    },
+    menuItems: {
+        transform: 'translateX(-28px)',
+        textAlign: 'center'
+    },
+    menuItem: {
+        textAlign: 'center'
     }
 }
 
@@ -45,10 +55,21 @@ export default props => (
             
             {props.brand}
         </h1>
-        <img
+        <Dropdown text=''
+            button
+            floating
             onClick={()=>{LOG('test')}} 
-            src={Menu} 
+            className='icon'
+            icon='tasks'
             style={styles.menu} 
-            alt=''/>
+        >
+            <Dropdown.Menu style={styles.menuItems}>
+            <Dropdown.Header icon='user' content='Sign In' />
+            <Dropdown.Divider />
+            <Dropdown.Item style={styles.menuItem} icon='google' />
+            <Dropdown.Item style={styles.menuItem} icon='facebook f' />
+            <Dropdown.Item style={styles.menuItem} icon='twitter' />
+            </Dropdown.Menu>
+        </Dropdown>
     </div>
 )
