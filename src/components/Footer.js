@@ -4,13 +4,14 @@ import { Grid, Divider } from 'semantic-ui-react'
 const styles = {
   container: {
     backgroundColor: '#222',
-    height: 270,
+    height: 275,
     textAlign: 'center',
     fontFamily: 'Roboto, sans-serif',
     fontWeight: 100,
     letterSpacing: 1,
     color: '#999',
     paddingTop: 30,
+    borderBottom: '6px solid #5482ab'
   },
   menuHeader: {
     fontWeight: 400,
