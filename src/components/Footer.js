@@ -4,7 +4,7 @@ import { Grid, Divider } from 'semantic-ui-react'
 const styles = {
   container: {
     backgroundColor: '#222',
-    height: 230,
+    height: 270,
     textAlign: 'center',
     fontFamily: 'Roboto, sans-serif',
     fontWeight: 100,
@@ -20,6 +20,12 @@ const styles = {
   menuItem: {
     color: '#ccc',
     lineHeight: 2
+  },
+  bottomText: {
+    lineHeight: 3
+  },
+  usageLinks: {
+    fontWeight: 400
   }
 }
 export default props => (
@@ -45,6 +51,8 @@ export default props => (
       </Grid>
     
     <Divider section/>
-    Real World Water &copy; 2017
+    <span style={styles.usageLinks}>Terms of Use</span><br/>
+    <span style={styles.usageLinks}>Privacy Policy</span><br/>
+    <span style={styles.bottomText} >Real World Water &copy; 2017</span>
   </div>
 )
