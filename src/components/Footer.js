@@ -52,7 +52,7 @@ export default props => (
       </Grid>
     
     <Divider section/>
-    <span style={styles.usageLinks}>Terms of Use</span><br/>
+    <span style={styles.usageLinks}>Terms of Use</span> &nbsp;&nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;
     <span style={styles.usageLinks}>Privacy Policy</span><br/>
     <span style={styles.bottomText} >Real World Water &copy; 2017</span>
   </div>
