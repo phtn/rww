@@ -1,9 +1,7 @@
 import React from 'react'
 import Water from '../water.svg'
-import Menu from '../menu.svg'
-import { Dropdown, Divider } from 'semantic-ui-react'
+import { Dropdown } from 'semantic-ui-react'
 
-const options = ['text', 'Google']
 
 const styles = {
     container: {
@@ -25,7 +23,7 @@ const styles = {
         height: 20,
         width: 20,
         position: 'absolute',
-        margin: 38
+        margin: 39
     },
     menu: {
         position: 'absolute',
@@ -52,7 +50,6 @@ export default props => (
     <div style={styles.container}>
         <img src={Water} style={styles.logo} alt=''/>
         <h1 style={styles.brand}>
-            
             {props.brand}
         </h1>
         <Dropdown text=''

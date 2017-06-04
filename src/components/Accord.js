@@ -5,7 +5,7 @@ import { Accordion, Icon } from 'semantic-ui-react'
 const styles = {
     container: {
         margin: 20,
-        marginTop: 130,
+        marginTop: 280,
         backgroundColor: 'transparent',
         borderRadius: 5,
         //minWidth: window.innerWidth,
@@ -17,7 +17,7 @@ const styles = {
 class Accord extends Component {
     render(){
         return(
-            <div style={styles.container}>  
+            <div style={styles.container} className='animated fadeInUp'>  
             <Accordion styled style={styles.accord}>
                 <Accordion.Title>
                 <Icon name='dropdown' />

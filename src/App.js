@@ -5,6 +5,7 @@ import Accord from './components/Accord'
 import Social from './components/Social'
 import Footer from './components/Footer'
 import './App.css';
+import './animate.css'
 
 const styles = {
   container: {
@@ -15,12 +16,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        
         <Header />
         <Nav brand={'Real World Water'}/>
-        <div className="App-header">
-          <h2>Real World Water</h2>
-        </div>
+        
         <div style={styles.content} className='content-div'>
           <Accord/>
           <Social/>

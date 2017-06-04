@@ -33,8 +33,8 @@ export default props => (
           </Grid.Column>
           <Grid.Column>
             <span style={styles.menuHeader}>Affiliates</span><br/>
-            <span style={styles.menuItem}>Consumer</span><br/>
-            <span style={styles.menuItem}>Enterprise</span>
+            <span style={styles.menuItem}>PA Water Co</span><br/>
+            <span style={styles.menuItem}>Microsoft</span>
           </Grid.Column>
           <Grid.Column>
             <span style={styles.menuHeader}>Support</span><br/>

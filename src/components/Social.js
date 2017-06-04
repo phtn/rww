@@ -18,7 +18,7 @@ const styles = {
 class Social extends Component {
   render(){
     return(
-      <div style={styles.container}>
+      <div style={styles.container} className='animated fadeInUp'>
       <Grid divided='vertically'>
         <Grid.Row columns={2}>
           <Grid.Column>

@@ -43,6 +43,7 @@ const settings = {
 	autoplay: true,
 	autoplaySpeed: 4000,
 	fade: true,
+  infinite: true,
   draggable: false,
 	vertical: false
 }

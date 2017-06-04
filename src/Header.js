@@ -10,6 +10,7 @@ const settings = {
     arrows: false,
 	autoplay: true,
 	autoplaySpeed: 3700,
+    infinite: true,
 	fade: false,
 	vertical: false
 }
@@ -22,7 +23,7 @@ const styles = {
     },
     div1: {
         height: 250,
-        backgroundColor: '#16214d',
+        backgroundColor: '#003666',
         margin: 0,
         textAlign: 'center',
         lineHeight:'350px',
@@ -43,7 +44,7 @@ const styles = {
     },
     div4: {
         height: 250,
-        backgroundColor: '#629aa9',
+        backgroundColor: '#222',
         margin: 0,
         textAlign: 'center',
         lineHeight: '350px'
