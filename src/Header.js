@@ -30,7 +30,7 @@ const styles = {
     },
     div2: {
         height: 250,
-        backgroundColor: '#00ad45',
+        backgroundColor: '#5482ab',
         margin: 0,
         textAlign: 'center',
         lineHeight: '350px'
