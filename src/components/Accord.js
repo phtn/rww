@@ -5,7 +5,7 @@ import { Accordion, Icon } from 'semantic-ui-react'
 const styles = {
     container: {
         margin: 20,
-        marginTop: 280,
+        marginTop: 140,
         backgroundColor: 'transparent',
         borderRadius: 5,
         //minWidth: window.innerWidth,

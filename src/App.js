@@ -4,18 +4,20 @@ import Nav from './components/Nav'
 import Accord from './components/Accord'
 import Social from './components/Social'
 import Footer from './components/Footer'
+import BG from './assets/bg.jpeg'
 import './App.css';
 import './animate.css'
 
 const styles = {
   container: {
-    border: '0px solid gray',
+    background: `url(${BG})`,
+
   }
 }
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App" style={styles.container}>
         <Header />
         <Nav brand={'Real World Water'}/>
         

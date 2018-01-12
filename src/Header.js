@@ -5,13 +5,14 @@ import Bottle from './bottle.svg'
 import Shower from './shower.svg'
 import Drop from './drop.svg'
 
+
 const settings = {
-    dots: true,
+    dots: false,
     arrows: false,
 	autoplay: true,
 	autoplaySpeed: 3700,
     infinite: true,
-	fade: false,
+	fade: true,
 	vertical: false
 }
 const styles = {
@@ -19,31 +20,33 @@ const styles = {
         position: 'absolute',
         width: window.innerWidth,
         top: 0,
-        textAlign: 'center'
+        textAlign: 'center',
+
     },
     div1: {
-        height: 250,
-        backgroundColor: '#003666',
+        display: 'inline',
+        height: 150,
+        backgroundColor: '#222',
         margin: 0,
         textAlign: 'center',
-        lineHeight:'350px',
+        lineHeight:'300px',
     },
     div2: {
-        height: 250,
-        backgroundColor: '#5482ab',
+        height: 150,
+        backgroundColor: '#222',
         margin: 0,
         textAlign: 'center',
         lineHeight: '350px'
     },
     div3: {
-        height: 250,
-        backgroundColor: '#8996a0',
+        height: 150,
+        backgroundColor: '#222',
         margin: 0,
         textAlign: 'center',
         lineHeight: '350px'
     },
     div4: {
-        height: 250,
+        height: 150,
         backgroundColor: '#222',
         margin: 0,
         textAlign: 'center',
@@ -59,14 +62,17 @@ const styles = {
     img: {
         height: 40,
         width: 40,
-        marginLeft: window.innerWidth/2 -20,
-        marginTop: 150
+        marginTop: 50,
+        position: 'relative',
+        float: 'left',
+        left: window.innerWidth/2
+        
     }
 }
 export default props => (
     <div style={styles.container}> 
     <Slider {...settings}>
-        <div style={styles.div1}><img src={Glass} style={styles.img} alt=''/></div>
+        <div style={styles.div1}><img src={Glass} style={styles.img} alt=''/><img src={Glass} style={styles.img} alt=''/></div>
         <div style={styles.div2}><img src={Bottle} style={styles.img} alt=''/></div>
         <div style={styles.div3}><img src={Shower} style={styles.img} alt=''/></div>
         <div style={styles.div4}><img src={Drop} style={styles.img} alt=''/></div>
