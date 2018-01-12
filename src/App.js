@@ -10,8 +10,8 @@ import './animate.css'
 
 const styles = {
   container: {
-    background: `url(${BG})`,
-
+    // background: `url(${BG})`,
+    backgroundColor: '#ccc'
   }
 }
 class App extends Component {

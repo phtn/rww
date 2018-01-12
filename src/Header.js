@@ -4,12 +4,12 @@ import Glass from './glass.svg'
 import Bottle from './bottle.svg'
 import Shower from './shower.svg'
 import Drop from './drop.svg'
-
+import river from './assets/river.jpeg'
 
 const settings = {
     dots: false,
     arrows: false,
-	autoplay: true,
+	autoplay: false,
 	autoplaySpeed: 3700,
     infinite: true,
 	fade: true,
@@ -25,28 +25,29 @@ const styles = {
     },
     div1: {
         display: 'inline',
-        height: 150,
+        height: 300,
         backgroundColor: '#222',
+        background: `url(${river})`,
         margin: 0,
         textAlign: 'center',
         lineHeight:'300px',
     },
     div2: {
-        height: 150,
+        height: 300,
         backgroundColor: '#222',
         margin: 0,
         textAlign: 'center',
         lineHeight: '350px'
     },
     div3: {
-        height: 150,
+        height: 300,
         backgroundColor: '#222',
         margin: 0,
         textAlign: 'center',
         lineHeight: '350px'
     },
     div4: {
-        height: 150,
+        height: 300,
         backgroundColor: '#222',
         margin: 0,
         textAlign: 'center',
@@ -72,7 +73,7 @@ const styles = {
 export default props => (
     <div style={styles.container}> 
     <Slider {...settings}>
-        <div style={styles.div1}><img src={Glass} style={styles.img} alt=''/><img src={Glass} style={styles.img} alt=''/></div>
+        <div style={styles.div1}></div>
         <div style={styles.div2}><img src={Bottle} style={styles.img} alt=''/></div>
         <div style={styles.div3}><img src={Shower} style={styles.img} alt=''/></div>
         <div style={styles.div4}><img src={Drop} style={styles.img} alt=''/></div>
